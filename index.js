@@ -22,3 +22,18 @@ sideLinks.forEach(function (Link){
 closebtn.addEventListener("click",function(){
     topBanner.classList.add("d-none");
 });
+
+
+
+const mainSlider = new Swiper(".main-slider", {
+  loop: true,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
