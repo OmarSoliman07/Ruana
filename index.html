@@ -21,17 +21,17 @@
 
     <div class="d-flex vh-100 overflow-hidden">
 
+        <!-- Side Nav -->
 
-
-        <aside class="main-bgColor sideBar-width flex-shrink-0 h-100 overflow-y-auto no-scrollbar" id="side-nav">
+        <aside class="main-bgColor sideBar-width flex-shrink-0 h-100 overflow-y-auto no-scrollbar d-none d-md-block " id="side-nav">
             <div class="sideBar-logo d-flex align-items-center">
-                <img class="sideBar-logo-img" src="assets/images/logo.svg" alt="logo">
+                <a href="#"><img class="sideBar-logo-img" src="assets/images/logo.svg" alt="logo"></a>
             </div>
 
             <div class="d-flex flex-column padding-8 gap-8px ">
                 <div class="d-flex flex-column gap-4px">
-                    <p class="sideBar-sectionTitle fw-bolder fs-12 padding-y-4">MAIN</p>
-                    <a href="#" class="sideLink d-flex align-items-center gap-8px padding-8 fs-12 text-decoration-none sideBar-blur">
+                    <h1 class="sideBar-sectionTitle fw-bolder fs-12 line-height-18px padding-y-4">MAIN</h1>
+                    <a href="#" class=" active sideLink  d-flex align-items-center gap-8px padding-8 fs-12 text-decoration-none sideBar-blur">
                         <span class="icon-16 d-flex align-items-center justify-content-center flex-shrink-0">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 0.833008C8.58247 0.833008 9.09889 1.03332 9.64941 1.36621C10.1825 1.68858 10.7919 2.16381 11.5566 2.76074L12.249 3.30078C12.2817 3.32631 12.3138 3.35206 12.3457 3.37695C13.2629 4.09242 13.8562 4.55513 14.1787 5.2168C14.5009 5.87811 14.5004 6.6312 14.5 7.79688V9.35156C14.5 10.5813 14.5005 11.5554 14.3984 12.3174C14.2934 13.1011 14.0717 13.735 13.5732 14.2354C13.0745 14.7359 12.4419 14.9589 11.6602 15.0645C10.9006 15.1669 9.92917 15.167 8.7041 15.167H7.2959C6.071 15.167 5.10036 15.1669 4.34082 15.0645C3.55888 14.959 2.9256 14.736 2.42676 14.2354C1.92843 13.7351 1.70754 13.101 1.60254 12.3174C1.50046 11.5554 1.49999 10.5813 1.5 9.35156V7.79688C1.49962 6.63102 1.49996 5.87818 1.82227 5.2168C2.14471 4.55516 2.73713 4.09236 3.6543 3.37695C3.68618 3.35208 3.71831 3.32628 3.75098 3.30078L4.44336 2.76074C5.20809 2.16382 5.81752 1.6886 6.35059 1.36621C6.90108 1.03334 7.41758 0.833032 8 0.833008ZM8.00098 10.5C7.68425 10.5 7.47132 10.5005 7.30664 10.5117C7.14643 10.5226 7.06798 10.5422 7.0166 10.5635C6.81223 10.648 6.65006 10.8103 6.56543 11.0146C6.54418 11.066 6.5237 11.1438 6.5127 11.3037C6.50139 11.4685 6.50113 11.682 6.50098 11.999L6.5 14.165C6.75883 14.1663 7.03585 14.167 7.33301 14.167H8.66699C8.96415 14.167 9.24117 14.1663 9.5 14.165V11.999C9.5 11.6821 9.4995 11.4694 9.48828 11.3047C9.47735 11.1444 9.45779 11.066 9.43652 11.0146C9.35193 10.8103 9.18969 10.6481 8.98535 10.5635C8.93396 10.5422 8.85565 10.5226 8.69531 10.5117C8.53057 10.5005 8.31785 10.5 8.00098 10.5ZM8 1.83301C7.66755 1.83303 7.33279 1.94073 6.86816 2.22168C6.39206 2.5096 5.82915 2.94806 5.0332 3.56934L4.36719 4.08984C3.31779 4.90895 2.92936 5.22633 2.7207 5.6543C2.51195 6.08263 2.5 6.58577 2.5 7.91992V9.31445C2.5 10.59 2.5016 11.4968 2.59375 12.1846C2.684 12.8581 2.85331 13.2468 3.13574 13.5303C3.41792 13.8133 3.80451 13.9828 4.47461 14.0732C4.77138 14.1133 5.10917 14.1334 5.5 14.1465L5.50098 11.9814C5.50111 11.6856 5.50171 11.4382 5.51562 11.2354C5.53012 11.0243 5.56156 10.8251 5.6416 10.6318C5.82773 10.1825 6.18446 9.82567 6.63379 9.63965C6.82717 9.55966 7.02716 9.52806 7.23828 9.51367C7.44095 9.49987 7.68778 9.5 7.9834 9.5H8.01758C8.31357 9.5 8.5608 9.49984 8.76367 9.51367C8.97472 9.52806 9.17388 9.55971 9.36719 9.63965C9.81692 9.82573 10.1743 10.1831 10.3604 10.6328C10.4403 10.8261 10.4719 11.0253 10.4863 11.2363C10.5002 11.4392 10.5 11.6865 10.5 11.9824V14.1465C10.8911 14.1334 11.2295 14.1133 11.5264 14.0732C12.1965 13.9828 12.5831 13.8134 12.8652 13.5303C13.1477 13.2468 13.317 12.8581 13.4072 12.1846C13.4994 11.4968 13.5 10.59 13.5 9.31445V7.91992C13.5 6.58577 13.488 6.08263 13.2793 5.6543C13.0707 5.22642 12.6828 4.90868 11.6338 4.08984L10.9668 3.56934C10.1708 2.948 9.60797 2.5096 9.13184 2.22168C8.66716 1.9407 8.33249 1.83301 8 1.83301Z" fill="currentColor"/>
@@ -49,8 +49,15 @@
                     </a>
                 </div>
 
+
+
+
+
+
+
+
                 <div class="d-flex flex-column">
-                    <p class="sideBar-sectionTitle fw-bolder fs-12 padding-y-4">MY WORK</p>
+                    <h1 class="sideBar-sectionTitle fw-bolder fs-12 line-height-18px padding-y-4">MY WORK</h1>
                     <a href="#" class="sideLink d-flex align-items-center gap-8px padding-8 fs-12 text-decoration-none sideBar-blur">
                         <span class="icon-16 d-flex align-items-center justify-content-center flex-shrink-0">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,8 +68,17 @@
                     </a>
                 </div>
 
+
+
+
+
+
+
+
+
+
                 <div class="d-flex flex-column">
-                    <p class="sideBar-sectionTitle fw-bolder fs-12 padding-y-4">PEOPLE</p>
+                    <h1 class="sideBar-sectionTitle fw-bolder fs-12 line-height-18px padding-y-4">PEOPLE</h1>
                     <a href="#" class="sideLink d-flex align-items-center gap-8px padding-8 fs-12 text-decoration-none sideBar-blur">
                         <span class="icon-16 d-flex align-items-center justify-content-center flex-shrink-0">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,8 +113,22 @@
                     </a>
                 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="d-flex flex-column">
-                    <p class="sideBar-sectionTitle fw-bolder fs-12 padding-y-4">SERVICES</p>
+                    <h1 class="sideBar-sectionTitle fw-bolder fs-12 line-height-18px padding-y-4">SERVICES</h1>
                     <a href="#" class="sideLink d-flex align-items-center gap-8px padding-8 fs-12 text-decoration-none sideBar-blur">
                         <span class="icon-16 d-flex align-items-center justify-content-center flex-shrink-0">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,8 +211,34 @@
                     </a>
                 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="d-flex flex-column">
-                    <p class="sideBar-sectionTitle fw-bolder fs-12 padding-y-4">ENGAGEMENTS</p>
+                    <h1 class="sideBar-sectionTitle fw-bolder fs-12 line-height-18px padding-y-4">ENGAGEMENTS</h1>
                     <a href="#" class="sideLink d-flex align-items-center gap-8px padding-8 fs-12 text-decoration-none sideBar-blur">
                         <span class="icon-16 d-flex align-items-center justify-content-center flex-shrink-0">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,72 +290,135 @@
                         <span class="sideBar-badge">1</span>
                     </a>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </aside>
 
+        <!-- Side Nav -->
 
 
 
-
+        <!-- Main Nav-->
 
                 <div class="d-flex flex-column flex-grow-1 min-w-0 h-100">
-            <header class="topBar d-flex align-items-center gap-12px padding-y-8 padding-x-16">
-                <button id="burger" class="topBar-icon border-0 bg-transparent p-0 d-flex flex-shrink-0" >
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 18.25C20.4142 18.25 20.75 18.5858 20.75 19C20.75 19.4142 20.4142 19.75 20 19.75H4C3.58579 19.75 3.25 19.4142 3.25 19C3.25 18.5858 3.58579 18.25 4 18.25H20ZM20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20ZM20 4.25C20.4142 4.25 20.75 4.58579 20.75 5C20.75 5.41421 20.4142 5.75 20 5.75H4C3.58579 5.75 3.25 5.41421 3.25 5C3.25 4.58579 3.58579 4.25 4 4.25H20Z" fill="currentColor"/>
-                    </svg>
-                </button>
+            <nav class="topBar d-flex align-items-center justify-content-between gap-12px padding-y-8 padding-x-16">
+    <button id="burger" class="topBar-icon border-0 bg-transparent p-0 d-flex flex-shrink-0">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 18.25C20.4142 18.25 20.75 18.5858 20.75 19C20.75 19.4142 20.4142 19.75 20 19.75H4C3.58579 19.75 3.25 19.4142 3.25 19C3.25 18.5858 3.58579 18.25 4 18.25H20ZM20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20ZM20 4.25C20.4142 4.25 20.75 4.58579 20.75 5C20.75 5.41421 20.4142 5.75 20 5.75H4C3.58579 5.75 3.25 5.41421 3.25 5C3.25 4.58579 3.58579 4.25 4 4.25H20Z" fill="currentColor"/>
+        </svg>
+    </button>
 
-                <div class="d-flex flex-grow-1 align-items-center justify-content-between min-w-0">
-                    <div class="topBar-search position-relative d-flex align-items-center">
-                        <span class="topBar-icon position-absolute start-0 top-50 translate-middle-y ms-3 d-flex">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 1.25C5.61522 1.25 1.25 5.61522 1.25 11C1.25 16.3848 5.61522 20.75 11 20.75C13.4226 20.75 15.6366 19.8638 17.3418 18.4014L21.4697 22.5303C21.7626 22.8232 22.2374 22.8232 22.5303 22.5303C22.8232 22.2374 22.8232 21.7626 22.5303 21.4697L18.4023 17.3408C19.8643 15.6358 20.75 13.4221 20.75 11C20.75 5.61522 16.3848 1.25 11 1.25ZM11 2.75C15.5563 2.75 19.25 6.44365 19.25 11C19.25 15.5563 15.5563 19.25 11 19.25C6.44365 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.44365 2.75 11 2.75Z" fill="currentColor"/>
-                            </svg>
-                        </span>
-                        <input type="text" class="topBar-searchInput form-control ps-5" placeholder="Search…">
-                    </div>
+    <div class="d-flex flex-grow-1 align-items-center justify-content-end justify-content-md-between min-w-0">
+        <div class="topBar-search position-relative align-items-center d-none d-md-flex">
+            <span class="topBar-icon position-absolute start-0 top-50 translate-middle-y ms-3 d-flex">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1.25C5.61522 1.25 1.25 5.61522 1.25 11C1.25 16.3848 5.61522 20.75 11 20.75C13.4226 20.75 15.6366 19.8638 17.3418 18.4014L21.4697 22.5303C21.7626 22.8232 22.2374 22.8232 22.5303 22.5303C22.8232 22.2374 22.8232 21.7626 22.5303 21.4697L18.4023 17.3408C19.8643 15.6358 20.75 13.4221 20.75 11C20.75 5.61522 16.3848 1.25 11 1.25ZM11 2.75C15.5563 2.75 19.25 6.44365 19.25 11C19.25 15.5563 15.5563 19.25 11 19.25C6.44365 19.25 2.75 15.5563 2.75 11C2.75 6.44365 6.44365 2.75 11 2.75Z" fill="currentColor"/>
+                </svg>
+            </span>
+            <input type="text" class="topBar-searchInput form-control ps-5" placeholder="Search…">
+        </div>
 
-                    <div class="d-flex align-items-center gap-12px">
-                        <button class="topBar-lang d-flex align-items-center gap-4px padding-6 fs-12 fw-medium">
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 0.833008C11.958 0.833008 15.167 4.04196 15.167 8C15.167 11.958 11.958 15.167 8 15.167C4.04196 15.167 0.833008 11.958 0.833008 8C0.833008 4.04196 4.04196 0.833008 8 0.833008ZM8 1.83301C4.59424 1.83301 1.83301 4.59424 1.83301 8C1.83301 11.4058 4.59424 14.167 8 14.167C11.4058 14.167 14.167 11.4058 14.167 8C14.167 4.59424 11.4058 1.83301 8 1.83301ZM7.66699 4.16699C7.94298 4.16717 8.16699 4.39096 8.16699 4.66699V5.08594H11.333C11.6091 5.08594 11.8329 5.30992 11.833 5.58594C11.833 5.86208 11.6091 6.08594 11.333 6.08594H10.0352C9.67573 7.15305 9.07525 8.15246 8.39941 9.04297L9.38379 10.0674C9.57522 10.2664 9.56913 10.583 9.37012 10.7744C9.17108 10.9656 8.85443 10.9597 8.66309 10.7607L7.76465 9.82617C7.15144 10.5386 6.50901 11.172 5.93359 11.7012C5.7304 11.888 5.41448 11.8749 5.22754 11.6719C5.04063 11.4686 5.05357 11.1518 5.25684 10.9648C5.84118 10.4275 6.486 9.78865 7.08984 9.07617C6.93759 8.88494 6.78008 8.6777 6.63574 8.47754C6.41125 8.16621 6.19285 7.83685 6.08496 7.60547C5.96831 7.35518 6.07686 7.05708 6.32715 6.94043C6.57733 6.82405 6.87457 6.93252 6.99121 7.18262C7.05477 7.319 7.22189 7.58003 7.44727 7.89258C7.53753 8.01776 7.63303 8.14566 7.72852 8.26953C8.23663 7.57806 8.67421 6.84334 8.97168 6.08594H4.66699C4.39085 6.08594 4.16699 5.86208 4.16699 5.58594C4.16714 5.30992 4.39094 5.08594 4.66699 5.08594H7.16699V4.66699C7.16699 4.39085 7.39085 4.16699 7.66699 4.16699Z" fill="currentColor"/>
-                            </svg>
-                            عربي
-                        </button>
+        <div class="d-flex align-items-center gap-12px min-w-0">
+            <button class="topBar-lang d-none d-md-flex align-items-center gap-4px padding-6 fs-12 fw-medium">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0.833008C11.958 0.833008 15.167 4.04196 15.167 8C15.167 11.958 11.958 15.167 8 15.167C4.04196 15.167 0.833008 11.958 0.833008 8C0.833008 4.04196 4.04196 0.833008 8 0.833008ZM8 1.83301C4.59424 1.83301 1.83301 4.59424 1.83301 8C1.83301 11.4058 4.59424 14.167 8 14.167C11.4058 14.167 14.167 11.4058 14.167 8C14.167 4.59424 11.4058 1.83301 8 1.83301ZM7.66699 4.16699C7.94298 4.16717 8.16699 4.39096 8.16699 4.66699V5.08594H11.333C11.6091 5.08594 11.8329 5.30992 11.833 5.58594C11.833 5.86208 11.6091 6.08594 11.333 6.08594H10.0352C9.67573 7.15305 9.07525 8.15246 8.39941 9.04297L9.38379 10.0674C9.57522 10.2664 9.56913 10.583 9.37012 10.7744C9.17108 10.9656 8.85443 10.9597 8.66309 10.7607L7.76465 9.82617C7.15144 10.5386 6.50901 11.172 5.93359 11.7012C5.7304 11.888 5.41448 11.8749 5.22754 11.6719C5.04063 11.4686 5.05357 11.1518 5.25684 10.9648C5.84118 10.4275 6.486 9.78865 7.08984 9.07617C6.93759 8.88494 6.78008 8.6777 6.63574 8.47754C6.41125 8.16621 6.19285 7.83685 6.08496 7.60547C5.96831 7.35518 6.07686 7.05708 6.32715 6.94043C6.57733 6.82405 6.87457 6.93252 6.99121 7.18262C7.05477 7.319 7.22189 7.58003 7.44727 7.89258C7.53753 8.01776 7.63303 8.14566 7.72852 8.26953C8.23663 7.57806 8.67421 6.84334 8.97168 6.08594H4.66699C4.39085 6.08594 4.16699 5.86208 4.16699 5.58594C4.16714 5.30992 4.39094 5.08594 4.66699 5.08594H7.16699V4.66699C7.16699 4.39085 7.39085 4.16699 7.66699 4.16699Z" fill="currentColor"/>
+                </svg>
+                عربي
+            </button>
 
-                        <button class="topBar-icon border-0 bg-transparent p-0 d-flex" aria-label="Dark mode">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.5163 2.04296C10.6958 2.27649 10.722 2.59345 10.5832 2.85326C9.99927 3.9469 9.66792 5.19607 9.66792 6.52485C9.66792 10.8367 13.1633 14.3321 17.4751 14.3321C18.8039 14.3321 20.0531 14.0007 21.1467 13.4168C21.4065 13.278 21.7235 13.3042 21.957 13.4837C22.1906 13.6632 22.2974 13.9627 22.2302 14.2495C21.1556 18.8349 17.0409 22.25 12.1269 22.25C6.39589 22.25 1.75 17.6041 1.75 11.8731C1.75 6.95906 5.16505 2.84445 9.7505 1.76979C10.0373 1.70258 10.3368 1.80944 10.5163 2.04296ZM8.59638 3.72581C5.45025 5.091 3.25 8.2258 3.25 11.8731C3.25 16.7757 7.22431 20.75 12.1269 20.75C15.7742 20.75 18.909 18.5498 20.2742 15.4036C19.3903 15.682 18.4498 15.8321 17.4751 15.8321C12.3349 15.8321 8.16792 11.6651 8.16792 6.52485C8.16792 5.55019 8.31797 4.60972 8.59638 3.72581Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>
-                            </svg>
-                        </button>
+            <button class="topBar-icon border-0 bg-transparent p-0 d-flex flex-shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5163 2.04296C10.6958 2.27649 10.722 2.59345 10.5832 2.85326C9.99927 3.9469 9.66792 5.19607 9.66792 6.52485C9.66792 10.8367 13.1633 14.3321 17.4751 14.3321C18.8039 14.3321 20.0531 14.0007 21.1467 13.4168C21.4065 13.278 21.7235 13.3042 21.957 13.4837C22.1906 13.6632 22.2974 13.9627 22.2302 14.2495C21.1556 18.8349 17.0409 22.25 12.1269 22.25C6.39589 22.25 1.75 17.6041 1.75 11.8731C1.75 6.95906 5.16505 2.84445 9.7505 1.76979C10.0373 1.70258 10.3368 1.80944 10.5163 2.04296ZM8.59638 3.72581C5.45025 5.091 3.25 8.2258 3.25 11.8731C3.25 16.7757 7.22431 20.75 12.1269 20.75C15.7742 20.75 18.909 18.5498 20.2742 15.4036C19.3903 15.682 18.4498 15.8321 17.4751 15.8321C12.3349 15.8321 8.16792 11.6651 8.16792 6.52485C8.16792 5.55019 8.31797 4.60972 8.59638 3.72581Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>
+                </svg>
+            </button>
 
-                        <button class="topBar-icon position-relative border-0 bg-transparent p-0 d-flex" aria-label="Notifications">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 1.25C12.483 1.25 13.0263 1.33296 13.4714 1.62434C13.9652 1.94759 14.25 2.47083 14.25 3.125C14.25 3.58918 14.1088 4.06938 13.8789 4.48431C17.0314 5.28651 19.4122 8.06135 19.5906 11.4516C19.5997 11.6241 19.6064 11.7893 19.6129 11.9485C19.6351 12.49 19.6544 12.9615 19.7525 13.4133C19.8698 13.9531 20.0867 14.3775 20.5279 14.7084C21.2972 15.2854 21.75 16.191 21.75 17.1527C21.75 18.534 20.6628 19.75 19.2 19.75H15.675C15.3275 21.4617 13.8142 22.75 12 22.75C10.1858 22.75 8.67247 21.4617 8.32501 19.75H4.8C3.33719 19.75 2.25 18.534 2.25 17.1527C2.25 16.2597 2.64041 15.4151 3.31216 14.837L3.47213 14.7084C3.91329 14.3775 4.13025 13.9531 4.24749 13.4133C4.32599 13.0519 4.35403 12.6778 4.37345 12.2654L4.38705 11.9485C4.39356 11.7893 4.40032 11.6241 4.4094 11.4516C4.58784 8.06135 6.96857 5.28651 10.1211 4.48431C9.89125 4.06938 9.75 3.58918 9.75 3.125C9.75 2.47083 10.0348 1.94759 10.5286 1.62434C10.9737 1.33296 11.517 1.25 12 1.25ZM14.122 19.75H9.87803C10.1869 20.6239 11.0203 21.25 12 21.25C12.9797 21.25 13.8131 20.6239 14.122 19.75ZM12 5.75C8.75507 5.75 6.07788 8.28999 5.90733 11.5304C5.90061 11.6582 5.89525 11.7935 5.88968 11.9342C5.86752 12.4942 5.84199 13.1391 5.71332 13.7316C5.54263 14.5176 5.1782 15.3039 4.37213 15.9084C3.98049 16.2021 3.75 16.6631 3.75 17.1527C3.75 17.7677 4.22641 18.25 4.8 18.25H19.2C19.7736 18.25 20.25 17.7677 20.25 17.1527C20.25 16.6631 20.0195 16.2021 19.6279 15.9084C18.8218 15.3039 18.4574 14.5176 18.2867 13.7316C18.1837 13.2576 18.1468 12.7501 18.1248 12.2793L18.1103 11.9341C18.1047 11.7933 18.0994 11.6581 18.0927 11.5304C17.9221 8.28999 15.2449 5.75 12 5.75ZM12 2.75C11.6546 2.75 11.4479 2.81533 11.3501 2.87934C11.3098 2.90574 11.2923 2.92864 11.2816 2.94888C11.2704 2.97026 11.25 3.02106 11.25 3.125C11.25 3.35726 11.3528 3.67217 11.5413 3.92575C11.7353 4.18683 11.9131 4.25 12 4.25C12.0869 4.25 12.2647 4.18683 12.4587 3.92575C12.6472 3.67217 12.75 3.35726 12.75 3.125C12.75 3.02106 12.7296 2.97026 12.7184 2.94888C12.7077 2.92864 12.6902 2.90574 12.6499 2.87934C12.5521 2.81533 12.3454 2.75 12 2.75Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>
-                            </svg>
-                            <span class="topBar-badge position-absolute">1</span>
-                        </button>
+            <button class="topBar-icon position-relative border-0 bg-transparent p-0 d-flex flex-shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 1.25C12.483 1.25 13.0263 1.33296 13.4714 1.62434C13.9652 1.94759 14.25 2.47083 14.25 3.125C14.25 3.58918 14.1088 4.06938 13.8789 4.48431C17.0314 5.28651 19.4122 8.06135 19.5906 11.4516C19.5997 11.6241 19.6064 11.7893 19.6129 11.9485C19.6351 12.49 19.6544 12.9615 19.7525 13.4133C19.8698 13.9531 20.0867 14.3775 20.5279 14.7084C21.2972 15.2854 21.75 16.191 21.75 17.1527C21.75 18.534 20.6628 19.75 19.2 19.75H15.675C15.3275 21.4617 13.8142 22.75 12 22.75C10.1858 22.75 8.67247 21.4617 8.32501 19.75H4.8C3.33719 19.75 2.25 18.534 2.25 17.1527C2.25 16.2597 2.64041 15.4151 3.31216 14.837L3.47213 14.7084C3.91329 14.3775 4.13025 13.9531 4.24749 13.4133C4.32599 13.0519 4.35403 12.6778 4.37345 12.2654L4.38705 11.9485C4.39356 11.7893 4.40032 11.6241 4.4094 11.4516C4.58784 8.06135 6.96857 5.28651 10.1211 4.48431C9.89125 4.06938 9.75 3.58918 9.75 3.125C9.75 2.47083 10.0348 1.94759 10.5286 1.62434C10.9737 1.33296 11.517 1.25 12 1.25ZM14.122 19.75H9.87803C10.1869 20.6239 11.0203 21.25 12 21.25C12.9797 21.25 13.8131 20.6239 14.122 19.75ZM12 5.75C8.75507 5.75 6.07788 8.28999 5.90733 11.5304C5.90061 11.6582 5.89525 11.7935 5.88968 11.9342C5.86752 12.4942 5.84199 13.1391 5.71332 13.7316C5.54263 14.5176 5.1782 15.3039 4.37213 15.9084C3.98049 16.2021 3.75 16.6631 3.75 17.1527C3.75 17.7677 4.22641 18.25 4.8 18.25H19.2C19.7736 18.25 20.25 17.7677 20.25 17.1527C20.25 16.6631 20.0195 16.2021 19.6279 15.9084C18.8218 15.3039 18.4574 14.5176 18.2867 13.7316C18.1837 13.2576 18.1468 12.7501 18.1248 12.2793L18.1103 11.9341C18.1047 11.7933 18.0994 11.6581 18.0927 11.5304C17.9221 8.28999 15.2449 5.75 12 5.75ZM12 2.75C11.6546 2.75 11.4479 2.81533 11.3501 2.87934C11.3098 2.90574 11.2923 2.92864 11.2816 2.94888C11.2704 2.97026 11.25 3.02106 11.25 3.125C11.25 3.35726 11.3528 3.67217 11.5413 3.92575C11.7353 4.18683 11.9131 4.25 12 4.25C12.0869 4.25 12.2647 4.18683 12.4587 3.92575C12.6472 3.67217 12.75 3.35726 12.75 3.125C12.75 3.02106 12.7296 2.97026 12.7184 2.94888C12.7077 2.92864 12.6902 2.90574 12.6499 2.87934C12.5521 2.81533 12.3454 2.75 12 2.75Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>
+                </svg>
+                <span class="topBar-badge position-absolute">1</span>
+            </button>
 
-                        <button class="topBar-account d-flex align-items-center justify-content-center gap-8px">
-                            <span class="d-flex flex-column align-items-end text-end fs-12">
-                                <span class="topBar-title fw-bold">Ahmed Abdulmonem</span>
-                                <span class="topBar-body">Sr. Manager, Project Procurement</span>
-                            </span>
-                            <span class="d-flex align-items-center justify-content-center gap-8px">
-                                <span class="topBar-avatar d-flex align-items-center justify-content-center">JB</span>
-                                <span class="topBar-icon d-flex">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.60372 8.55529C6.7256 8.71666 7.08951 9.1984 7.30624 9.47611C7.74031 10.0323 8.33342 10.7714 8.97323 11.5083C9.61627 12.2489 10.2918 12.9702 10.8919 13.5005C11.1928 13.7663 11.4571 13.9684 11.6753 14.0999C11.8804 14.2235 12.0016 14.2493 12.0016 14.2493C12.0016 14.2493 12.1192 14.2235 12.3244 14.0999C12.5425 13.9684 12.8068 13.7663 13.1078 13.5005C13.7079 12.9702 14.3834 12.2489 15.0264 11.5083C15.6662 10.7714 16.2593 10.0323 16.6934 9.47608C16.9101 9.19837 17.2735 8.7173 17.3954 8.55593C17.6411 8.22241 18.1111 8.15047 18.4446 8.3961C18.7781 8.64173 18.8494 9.11123 18.6037 9.44476L18.6018 9.4473C18.474 9.61655 18.0971 10.1156 17.8759 10.3989C17.4321 10.9677 16.8216 11.7286 16.1591 12.4917C15.4997 13.2511 14.7741 14.0298 14.101 14.6245C13.7653 14.9212 13.425 15.1879 13.0988 15.3845C12.7932 15.5687 12.4063 15.75 11.9998 15.75C11.5933 15.75 11.2064 15.5687 10.9008 15.3845C10.5747 15.1879 10.2344 14.9212 9.89869 14.6245C9.22557 14.0298 8.4999 13.2511 7.84058 12.4917C7.17803 11.7286 6.5676 10.9677 6.12372 10.399C5.90243 10.1154 5.52551 9.61637 5.39793 9.44747L5.39628 9.44528C5.15064 9.11176 5.22154 8.64179 5.55506 8.39615C5.88857 8.15053 6.35808 8.22179 6.60372 8.55529Z" fill="currentColor"/>
-                                    </svg>
-                                </span>
-                            </span>
-                        </button>
-                    </div>
+            <button class="topBar-account d-flex align-items-center justify-content-between justify-content-md-center gap-8px min-w-0">
+                <span class="d-flex flex-column align-items-end text-end fs-12 min-w-0">
+                    <span class="topBar-title fw-bold  w-100">Ahmed Abdulmonem</span>
+                    <span class="topBar-body  w-100">Sr. Manager, Project Procurement</span>
+                </span>
+                <span class="d-flex align-items-center justify-content-center gap-8px flex-shrink-0">
+                    <span class="topBar-avatar d-flex align-items-center justify-content-center">JB</span>
+                    <span class="topBar-icon d-flex">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.60372 8.55529C6.7256 8.71666 7.08951 9.1984 7.30624 9.47611C7.74031 10.0323 8.33342 10.7714 8.97323 11.5083C9.61627 12.2489 10.2918 12.9702 10.8919 13.5005C11.1928 13.7663 11.4571 13.9684 11.6753 14.0999C11.8804 14.2235 12.0016 14.2493 12.0016 14.2493C12.0016 14.2493 12.1192 14.2235 12.3244 14.0999C12.5425 13.9684 12.8068 13.7663 13.1078 13.5005C13.7079 12.9702 14.3834 12.2489 15.0264 11.5083C15.6662 10.7714 16.2593 10.0323 16.6934 9.47608C16.9101 9.19837 17.2735 8.7173 17.3954 8.55593C17.6411 8.22241 18.1111 8.15047 18.4446 8.3961C18.7781 8.64173 18.8494 9.11123 18.6037 9.44476L18.6018 9.4473C18.474 9.61655 18.0971 10.1156 17.8759 10.3989C17.4321 10.9677 16.8216 11.7286 16.1591 12.4917C15.4997 13.2511 14.7741 14.0298 14.101 14.6245C13.7653 14.9212 13.425 15.1879 13.0988 15.3845C12.7932 15.5687 12.4063 15.75 11.9998 15.75C11.5933 15.75 11.2064 15.5687 10.9008 15.3845C10.5747 15.1879 10.2344 14.9212 9.89869 14.6245C9.22557 14.0298 8.4999 13.2511 7.84058 12.4917C7.17803 11.7286 6.5676 10.9677 6.12372 10.399C5.90243 10.1154 5.52551 9.61637 5.39793 9.44747L5.39628 9.44528C5.15064 9.11176 5.22154 8.64179 5.55506 8.39615C5.88857 8.15053 6.35808 8.22179 6.60372 8.55529Z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                </span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+            <!-- Main Nav-->
+
+
+
+
+
+            <!--Mini Nav-->
+
+           <div class="topBanner  main-bgColor d-flex align-items-center gap-12px padding-y-8 padding-x-16">
+    <span class="topBanner-icon sideBar-active d-flex align-items-center justify-content-center flex-shrink-0">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 13H2V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 4.5L8 9L6 7L2 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 7V4.5H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </span>
+
+    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center flex-grow-1 gap-4px min-w-0 fs-14">
+        <p class="sideBar-active fw-bold">New survey available:</p>
+        <p class="sideBar-section-focus">RUANA Platform First Impressions</p>
+    </div>
+
+            <div class="d-flex align-items-center gap-8px flex-shrink-0">
+                  <button class="topBanner-btn">view all</button>
+                     <button id="close-btn" class="topBanner-close sideBar-section-focus d-flex align-items-center justify-content-center" >
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.55806 4.55806C4.80214 4.31398 5.19786 4.31398 5.44194 4.55806L10 9.11612L14.5581 4.55806C14.8021 4.31398 15.1979 4.31398 15.4419 4.55806C15.686 4.80214 15.686 5.19786 15.4419 5.44194L10.8839 10L15.4419 14.5581C15.686 14.8021 15.686 15.1979 15.4419 15.4419C15.1979 15.686 14.8021 15.686 14.5581 15.4419L10 10.8839L5.44194 15.4419C5.19786 15.686 4.80214 15.686 4.55806 15.4419C4.31398 15.1979 4.31398 14.8021 4.55806 14.5581L9.11612 10L4.55806 5.44194C4.31398 5.19786 4.31398 4.80214 4.55806 4.55806Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>
+                        </svg>
+                     </button>
+                 </div>
                 </div>
-            </header>
 
-          
+            <!--Mini Nav-->
+
+
+
+
 
             <main class="flex-grow-1 overflow-y-auto">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam veritatis voluptates aut est vel minima, ullam consequuntur mollitia ratione nulla ad quo quisquam vitae, architecto quasi sequi ab quia tenetur!</p>

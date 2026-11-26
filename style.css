@@ -11,11 +11,14 @@
   --sidebar-active: #BD9B60;
   --hover-color: #403d63;
   --sidebar-logo-border: #CC2E20;
+  --border-color: #e8e8ec;
+  --text-body: #5E5A7A;
 }
 body {
   font-family: "Montserrat", sans-serif;
 }
 p { margin-bottom: 0; }
+h1{margin-bottom: 0;}
 
 .main-bgColor {
   background-color: var(--main-bg-color);
@@ -92,7 +95,7 @@ p { margin-bottom: 0; }
   background-color: var(--hover-color);
 }
 
-.sideLink:focus{
+.sideLink.active{
   background-color: var(--hover-color);
   border-left: 3px solid var(--sidebar-active);
   color: var(--sidebar-focus);
@@ -129,7 +132,9 @@ p { margin-bottom: 0; }
 }
 
 
-
+.line-height-18px{
+line-height: 18px;
+}
 
 .padding-x-16{
     padding-right: 16px;
@@ -167,19 +172,16 @@ p { margin-bottom: 0; }
 
 .topBar-searchInput{
   height: 40px;
-  padding-right: 16px;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  background-color: var(--sidebar-focus);
-  color: var(--text-title);
   font-size: 14px;
 }
 
 
 
 .topBar-searchInput:focus{
-  border-color: var(--sidebar-active);
   box-shadow: none;
+  border-color:var(--border-color) ;
 }
 
 .topBar-lang{
@@ -229,3 +231,29 @@ p { margin-bottom: 0; }
 }
 
 
+.topBanner-icon{
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  background-color: #38345c;
+}
+
+.topBanner-btn{
+  height: 32px;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 100px;
+  background-color: var(--sidebar-active);
+  color: var(--main-bg-color);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.topBanner-close{
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: transparent;
+}
